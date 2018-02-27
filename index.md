@@ -18,3 +18,5 @@ Estudiante de ingenieria de sistemas y computacion de la universidad nacional de
 
 ##### Github
 [Este es mi link de Github](https://github.com/jdmonroyg)
+>Pueden escribirme a: jdmonroyg@unal.edu.co
+
