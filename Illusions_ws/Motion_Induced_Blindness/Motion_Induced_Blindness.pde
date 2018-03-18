@@ -9,16 +9,8 @@ void setup(){
 }
 void draw(){
   background(0);
-  if (second() % 2 == 0) {  
-    jitter = color(255, 2, 2);
-  }
-  else jitter = color(2, 255, 2);
   
-  fill( #f0ff02 );
-  ellipse(200, 113, 8, 8);
-  ellipse(140, 270, 8, 8);
-  ellipse(260, 270, 8, 8);
-  
+  pushMatrix();
   constante_rotacion=0.02;
   rotacion = constante_rotacion+rotacion;
   translate(width/2, height/2);
@@ -40,8 +32,20 @@ void draw(){
       
     }
   }
+  
+  popMatrix();
+  if (second() % 2 == 0) {  
+    jitter = color(255, 2, 2);
+  }
+  else jitter = color(2, 255, 2);
+  
   fill( jitter);
-  ellipse(0, 0, 5, 5); // central
+  ellipse(200, 200, 5, 5); // central
   println(frameRate);
- 
+  
+  fill( #f0ff02 );
+  ellipse(200, 113, 8, 8);
+  ellipse(140, 270, 8, 8);
+  ellipse(260, 270, 8, 8);
+  
 }
